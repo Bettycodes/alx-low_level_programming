@@ -4,7 +4,7 @@
  *
  * Return: Always 0 (sucess/correct)
  */
-int main (void)
+int main(void)
 
 {
 char base_16;
