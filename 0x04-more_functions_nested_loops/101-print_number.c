@@ -1,45 +1,22 @@
 #include "main.h"
+
 /**
-* print_number - that prints an integer
-*@n: print int
-* Return: Always 0.
-*/
+ * print_number - prints an integer
+ * @n: tracked var
+ */
+
 void print_number(int n)
-
 {
+	unsigned int x = n;
 
-
-int i;
-int z;
-int d;
-int p;
-
-if (size > 0)
-{
-d = size - l;
-for (i = 0; i < size ; i++)
-{
-for (z= d; z > 0 ; z--)
-{
-_putchar (' ');
-}
-
-for(p=0; p <= i; p++)
-{
-_putchar (35);
-}
-
-d--;
-
-_putchar ('\n');
-
-
-}
-
-}
-
-else
-{
-_putchar ('\n');
-}
+	if (n < 0)
+	{
+		_putchar(45);
+		x = -x;
+	}
+	if ((x / 10) > 0)
+	{
+		print_number(x / 10);
+	}
+	_putchar((x % 10) + 48);
 }
