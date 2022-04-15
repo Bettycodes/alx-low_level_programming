@@ -31,8 +31,7 @@ _putchar (35);
 
 d--;
 
-putchar ('\n');
-
+_putchar ('\n');
 
 
 }
